@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        title='Formulario'
+        
+    body
+        h1 Formulario nuevo producto
+        form(action='/productos', method='POST')
+            label(for='titulo') Producto
+            input(type='text', name='titulo', required)
+            label(for='precio') Precio
+            input(type='number', name='precio', required)
+            label(for='thumbnail') Imagen
+            input(type='text', name='thumbnail', required)
+            a(href="http://localhost:8080/productos") 
+            button(type='submit') Guardar producto
